@@ -1,5 +1,5 @@
 {
-  "name": "SocialNetwork",
+  "name": "social-network",
   "description": "Social Network Example",
   "main": "",
   "authors": [
@@ -16,6 +16,7 @@
   ],
   "dependencies": {
     "angular": "^1.6.4",
-    "angular-ui-router": "^0.4.2"
+    "angular-ui-router": "^0.4.2",
+    "angular-jwt": "^0.1.9"
   }
 }
