@@ -7,7 +7,20 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
       url: "/login",
       controller: "LoginController",
       controllerAs: "self",
-      templateUrl: "app/views/controllers/login.html",
+      views: {
+        '': {
+          templateUrl: "app/views/controllers/login/login.html"
+        },
+        'header@login': {
+          templateUrl: "app/views/controllers/login/login-header.html"
+        },
+        'content@login': {
+          templateUrl: "app/views/controllers/login/login-content.html"
+        },
+        'footer@login': {
+          templateUrl: "app/views/controllers/login/login-footer.html"
+        }
+      },
       data: {
         authorization: false
       }
