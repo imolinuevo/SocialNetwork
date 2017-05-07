@@ -40,6 +40,23 @@
   height: 22px;
 }
 
+.left-content {
+  padding-left:0;
+  margin-top: 54px;
+}
+
+.left-header {
+  line-height: 36px;
+}
+
+.first-name {
+  padding-left: 0;
+}
+
+.last-name {
+  padding-right: 0;
+}
+
 .footer-top-row {
   border-bottom: 1px solid #dddfe2;
   margin-bottom: 8px;

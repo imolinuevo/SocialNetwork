@@ -1,5 +1,39 @@
 <div class="container">
   <div class="row login-content">
-    <p>Content</p>
+    <div class="col-xs-7 left-content">
+      <div class="row">
+        <div class="col-xs-8">
+          <h3 class="left-header"><b>Connect with friends and the world around you on SocialNetwork.</b></h3>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-5">
+      <div class="row">
+        <h1><b>Sign Up</b></h1>
+        <h4>It's free and always will be.</h4>
+      </div>
+      <form>
+        <div class="row form-group">
+          <div class="col-xs-6 first-name">
+            <input ng-model="self.registerService.firstName" type="text" name="first_name" class="form-control" placeholder="First name">
+          </div>
+          <div class="col-xs-6 last-name">
+            <input ng-model="self.registerService.lastName" type="text" name="last_name" class="form-control" placeholder="Last name">
+          </div>
+        </div>
+        <div class="row form-group">
+          <input ng-model="self.registerService.email" type="text" name="email" class="form-control" placeholder="Email">
+        </div>
+        <div class="row form-group">
+          <input ng-model="self.registerService.password" type="password" name="password" class="form-control" placeholder="New password">
+        </div>
+        <div class="row form-group">
+          <small>By clicking Sign Up, you agree to our <a href="#">Terms</a> and that you have read our <a href="#">Data Policy</a>, including our <a href="#">Cookie Use</a>. You may receive SMS Notifications from Facebook and can opt out at any time.</small>
+        </div>
+        <div class="row form-group">
+          <button ng-disabled="!self.registerService.firstName || !self.registerService.lastName || !self.registerService.email || !self.registerService.password" ng-click="self.register()" type="button" class="btn btn-success">Sign Up</button>
+        </div>
+      </form>
+    </div>
   </div>
 </div>

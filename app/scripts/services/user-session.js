@@ -33,6 +33,7 @@ function UserSession($window, jwtHelper) {
 
   function deleteSession() {
     $window.localStorage.removeItem('token');
+    session.token = null;
   }
 
   return session;

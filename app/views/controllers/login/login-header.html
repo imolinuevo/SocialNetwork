@@ -15,9 +15,9 @@
           <tbody>
             <tr>
               <tr>
-                <td class="header-table-td"><input class="header-input" type="email" name="email" required></td>
-                <td class="header-table-td"><input class="header-input" type="password" name="password" required></td>
-                <td class="header-table-td"><input type="button" class="btn btn-primary btn-xs" value="Log In"></td>
+                <td class="header-table-td"><input ng-model="self.loginService.email" class="header-input" type="text" name="email" required></td>
+                <td class="header-table-td"><input ng-model="self.loginService.password" class="header-input" type="password" name="password" required></td>
+                <td class="header-table-td"><input ng-disabled="!self.loginService.email || !self.loginService.password" ng-click="self.login()" type="button" class="btn btn-primary btn-xs" value="Log In"></td>
               </tr>
             </tr>
             <tr>

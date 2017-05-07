@@ -5,10 +5,10 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
     $stateProvider
     .state("login", {
       url: "/login",
-      controller: "LoginController",
-      controllerAs: "self",
       views: {
         '': {
+          controller: "LoginController",
+          controllerAs: "self",
           templateUrl: "app/views/controllers/login/login.html"
         },
         'header@login': {

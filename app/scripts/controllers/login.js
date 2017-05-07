@@ -1,14 +1,21 @@
-function LoginController(UserSession) {
+function LoginController(UserSession, LoginService, RegisterService) {
 
-  var login = function () {
-    UserSession.set('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJTb2NpYWxOZXR3b3JrIiwiaWF0IjoxNDkzNzQ1NTUwLCJleHAiOjE1MjUyODE1NTAsImF1ZCI6ImxvY2FsaG9zdCIsInN1YiI6IiIsInVpZCI6IjEyMyIsIm5hbWUiOiJleGFtcGxlIiwicm9sZXMiOiJbXCJ1c2VyXCJdIn0.-JM1dj0rxrghfbAkM1egwV9aXYehwG0jG15qqaPLb0c');
+  function login() {
+    console.log(LoginService);
+  }
+
+  function register() {
+    console.log(RegisterService);
   }
 
   var self = this;
   //Init
   self.session = UserSession;
+  self.loginService = LoginService;
+  self.registerService = RegisterService;
   //Fn
   self.login = login;
+  self.register = register;
 }
 
 angular.module('app').controller('LoginController', LoginController);
